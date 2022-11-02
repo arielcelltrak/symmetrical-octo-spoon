@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		796FD0B72912C924004539EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0B62912C924004539EF /* AppDelegate.m */; };
+		796FD0BA2912C924004539EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0B92912C924004539EF /* SceneDelegate.m */; };
+		796FD0BD2912C924004539EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0BC2912C924004539EF /* ViewController.m */; };
+		796FD0C02912C924004539EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796FD0BE2912C924004539EF /* Main.storyboard */; };
+		796FD0C22912C926004539EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796FD0C12912C926004539EF /* Assets.xcassets */; };
+		796FD0C52912C926004539EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796FD0C32912C926004539EF /* LaunchScreen.storyboard */; };
+		796FD0C82912C926004539EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0C72912C926004539EF /* main.m */; };
+		796FD0D22912C926004539EF /* SymmetricalOctoSpoonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0D12912C926004539EF /* SymmetricalOctoSpoonTests.m */; };
+		796FD0DC2912C926004539EF /* SymmetricalOctoSpoonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0DB2912C926004539EF /* SymmetricalOctoSpoonUITests.m */; };
+		796FD0DE2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0DD2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		796FD0CE2912C926004539EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796FD0AA2912C924004539EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796FD0B12912C924004539EF;
+			remoteInfo = SymmetricalOctoSpoon;
+		};
+		796FD0D82912C926004539EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 796FD0AA2912C924004539EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 796FD0B12912C924004539EF;
+			remoteInfo = SymmetricalOctoSpoon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		796FD0B22912C924004539EF /* SymmetricalOctoSpoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymmetricalOctoSpoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		796FD0B52912C924004539EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		796FD0B62912C924004539EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		796FD0B82912C924004539EF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		796FD0B92912C924004539EF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		796FD0BB2912C924004539EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		796FD0BC2912C924004539EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		796FD0BF2912C924004539EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		796FD0C12912C926004539EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		796FD0C42912C926004539EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		796FD0C62912C926004539EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		796FD0C72912C926004539EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		796FD0CD2912C926004539EF /* SymmetricalOctoSpoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalOctoSpoonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		796FD0D12912C926004539EF /* SymmetricalOctoSpoonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymmetricalOctoSpoonTests.m; sourceTree = "<group>"; };
+		796FD0D72912C926004539EF /* SymmetricalOctoSpoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalOctoSpoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		796FD0DB2912C926004539EF /* SymmetricalOctoSpoonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymmetricalOctoSpoonUITests.m; sourceTree = "<group>"; };
+		796FD0DD2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymmetricalOctoSpoonUITestsLaunchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		796FD0AF2912C924004539EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FD0CA2912C926004539EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FD0D42912C926004539EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		796FD0A92912C924004539EF = {
+			isa = PBXGroup;
+			children = (
+				796FD0B42912C924004539EF /* SymmetricalOctoSpoon */,
+				796FD0D02912C926004539EF /* SymmetricalOctoSpoonTests */,
+				796FD0DA2912C926004539EF /* SymmetricalOctoSpoonUITests */,
+				796FD0B32912C924004539EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		796FD0B32912C924004539EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				796FD0B22912C924004539EF /* SymmetricalOctoSpoon.app */,
+				796FD0CD2912C926004539EF /* SymmetricalOctoSpoonTests.xctest */,
+				796FD0D72912C926004539EF /* SymmetricalOctoSpoonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		796FD0B42912C924004539EF /* SymmetricalOctoSpoon */ = {
+			isa = PBXGroup;
+			children = (
+				796FD0B52912C924004539EF /* AppDelegate.h */,
+				796FD0B62912C924004539EF /* AppDelegate.m */,
+				796FD0B82912C924004539EF /* SceneDelegate.h */,
+				796FD0B92912C924004539EF /* SceneDelegate.m */,
+				796FD0BB2912C924004539EF /* ViewController.h */,
+				796FD0BC2912C924004539EF /* ViewController.m */,
+				796FD0BE2912C924004539EF /* Main.storyboard */,
+				796FD0C12912C926004539EF /* Assets.xcassets */,
+				796FD0C32912C926004539EF /* LaunchScreen.storyboard */,
+				796FD0C62912C926004539EF /* Info.plist */,
+				796FD0C72912C926004539EF /* main.m */,
+			);
+			path = SymmetricalOctoSpoon;
+			sourceTree = "<group>";
+		};
+		796FD0D02912C926004539EF /* SymmetricalOctoSpoonTests */ = {
+			isa = PBXGroup;
+			children = (
+				796FD0D12912C926004539EF /* SymmetricalOctoSpoonTests.m */,
+			);
+			path = SymmetricalOctoSpoonTests;
+			sourceTree = "<group>";
+		};
+		796FD0DA2912C926004539EF /* SymmetricalOctoSpoonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				796FD0DB2912C926004539EF /* SymmetricalOctoSpoonUITests.m */,
+				796FD0DD2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m */,
+			);
+			path = SymmetricalOctoSpoonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		796FD0B12912C924004539EF /* SymmetricalOctoSpoon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796FD0E12912C926004539EF /* Build configuration list for PBXNativeTarget "SymmetricalOctoSpoon" */;
+			buildPhases = (
+				796FD0AE2912C924004539EF /* Sources */,
+				796FD0AF2912C924004539EF /* Frameworks */,
+				796FD0B02912C924004539EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SymmetricalOctoSpoon;
+			productName = SymmetricalOctoSpoon;
+			productReference = 796FD0B22912C924004539EF /* SymmetricalOctoSpoon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		796FD0CC2912C926004539EF /* SymmetricalOctoSpoonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796FD0E42912C926004539EF /* Build configuration list for PBXNativeTarget "SymmetricalOctoSpoonTests" */;
+			buildPhases = (
+				796FD0C92912C926004539EF /* Sources */,
+				796FD0CA2912C926004539EF /* Frameworks */,
+				796FD0CB2912C926004539EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796FD0CF2912C926004539EF /* PBXTargetDependency */,
+			);
+			name = SymmetricalOctoSpoonTests;
+			productName = SymmetricalOctoSpoonTests;
+			productReference = 796FD0CD2912C926004539EF /* SymmetricalOctoSpoonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		796FD0D62912C926004539EF /* SymmetricalOctoSpoonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796FD0E72912C926004539EF /* Build configuration list for PBXNativeTarget "SymmetricalOctoSpoonUITests" */;
+			buildPhases = (
+				796FD0D32912C926004539EF /* Sources */,
+				796FD0D42912C926004539EF /* Frameworks */,
+				796FD0D52912C926004539EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796FD0D92912C926004539EF /* PBXTargetDependency */,
+			);
+			name = SymmetricalOctoSpoonUITests;
+			productName = SymmetricalOctoSpoonUITests;
+			productReference = 796FD0D72912C926004539EF /* SymmetricalOctoSpoonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		796FD0AA2912C924004539EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					796FD0B12912C924004539EF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					796FD0CC2912C926004539EF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 796FD0B12912C924004539EF;
+					};
+					796FD0D62912C926004539EF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 796FD0B12912C924004539EF;
+					};
+				};
+			};
+			buildConfigurationList = 796FD0AD2912C924004539EF /* Build configuration list for PBXProject "SymmetricalOctoSpoon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 796FD0A92912C924004539EF;
+			productRefGroup = 796FD0B32912C924004539EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				796FD0B12912C924004539EF /* SymmetricalOctoSpoon */,
+				796FD0CC2912C926004539EF /* SymmetricalOctoSpoonTests */,
+				796FD0D62912C926004539EF /* SymmetricalOctoSpoonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		796FD0B02912C924004539EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796FD0C52912C926004539EF /* LaunchScreen.storyboard in Resources */,
+				796FD0C22912C926004539EF /* Assets.xcassets in Resources */,
+				796FD0C02912C924004539EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FD0CB2912C926004539EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FD0D52912C926004539EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		796FD0AE2912C924004539EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796FD0BD2912C924004539EF /* ViewController.m in Sources */,
+				796FD0B72912C924004539EF /* AppDelegate.m in Sources */,
+				796FD0C82912C926004539EF /* main.m in Sources */,
+				796FD0BA2912C924004539EF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FD0C92912C926004539EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796FD0D22912C926004539EF /* SymmetricalOctoSpoonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796FD0D32912C926004539EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796FD0DE2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m in Sources */,
+				796FD0DC2912C926004539EF /* SymmetricalOctoSpoonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		796FD0CF2912C926004539EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796FD0B12912C924004539EF /* SymmetricalOctoSpoon */;
+			targetProxy = 796FD0CE2912C926004539EF /* PBXContainerItemProxy */;
+		};
+		796FD0D92912C926004539EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 796FD0B12912C924004539EF /* SymmetricalOctoSpoon */;
+			targetProxy = 796FD0D82912C926004539EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		796FD0BE2912C924004539EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				796FD0BF2912C924004539EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		796FD0C32912C926004539EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				796FD0C42912C926004539EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		796FD0DF2912C926004539EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		796FD0E02912C926004539EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		796FD0E22912C926004539EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C54275GY46;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SymmetricalOctoSpoon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arielcelltrak.SymmetricalOctoSpoon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		796FD0E32912C926004539EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C54275GY46;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SymmetricalOctoSpoon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arielcelltrak.SymmetricalOctoSpoon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		796FD0E52912C926004539EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C54275GY46;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arielcelltrak.SymmetricalOctoSpoonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SymmetricalOctoSpoon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SymmetricalOctoSpoon";
+			};
+			name = Debug;
+		};
+		796FD0E62912C926004539EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C54275GY46;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arielcelltrak.SymmetricalOctoSpoonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SymmetricalOctoSpoon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SymmetricalOctoSpoon";
+			};
+			name = Release;
+		};
+		796FD0E82912C926004539EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C54275GY46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arielcelltrak.SymmetricalOctoSpoonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SymmetricalOctoSpoon;
+			};
+			name = Debug;
+		};
+		796FD0E92912C926004539EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C54275GY46;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arielcelltrak.SymmetricalOctoSpoonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SymmetricalOctoSpoon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		796FD0AD2912C924004539EF /* Build configuration list for PBXProject "SymmetricalOctoSpoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796FD0DF2912C926004539EF /* Debug */,
+				796FD0E02912C926004539EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796FD0E12912C926004539EF /* Build configuration list for PBXNativeTarget "SymmetricalOctoSpoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796FD0E22912C926004539EF /* Debug */,
+				796FD0E32912C926004539EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796FD0E42912C926004539EF /* Build configuration list for PBXNativeTarget "SymmetricalOctoSpoonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796FD0E52912C926004539EF /* Debug */,
+				796FD0E62912C926004539EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796FD0E72912C926004539EF /* Build configuration list for PBXNativeTarget "SymmetricalOctoSpoonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796FD0E82912C926004539EF /* Debug */,
+				796FD0E92912C926004539EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 796FD0AA2912C924004539EF /* Project object */;
+}
