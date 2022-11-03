@@ -9,6 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString *const kRegionKey;
+
 @class CLRegion;
 
 @interface Region : NSObject <NSSecureCoding>

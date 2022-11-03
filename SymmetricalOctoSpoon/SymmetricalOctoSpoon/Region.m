@@ -8,7 +8,7 @@
 #import "Region.h"
 #import <CoreLocation/CoreLocation.h>
 
-NSString * const kRegionKey = @"location";
+NSString * const kRegionKey = @"region";
 NSString * const kRegionTimestampKey = @"timestamp";
 
 @implementation Region

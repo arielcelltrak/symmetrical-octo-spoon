@@ -9,6 +9,8 @@
 #import "Region.h"
 #import <CoreLocation/CoreLocation.h>
 
+NSNotificationName const LocationManagerDidLeaveRegionNotification = @"LocationManagerDidLeaveRegionNotification";
+
 @interface LocationManager ()
 @property (nonnull, strong) CLLocationManager *locationManager;
 @property (nullable, strong) CLLocation *currentLocation;
@@ -27,7 +29,7 @@
 - (void)locationManager:(CLLocationManager *)manager
           didExitRegion:(CLRegion *)region {
     [manager stopMonitoringForRegion:region];
-    NSUserDefaults *sud = [NSUserDefaults standardUserDefaults];
+    
     NSDate *date = [NSDate date];
     Region *currentRegion = [[Region alloc] init];
     [currentRegion setRegion:region];
@@ -41,9 +43,14 @@
         NSLog(@"%@", error);
         return;
     }
+    
+    NSUserDefaults *sud = [NSUserDefaults standardUserDefaults];
     [sud setObject:data
-            forKey:@"region"];
+            forKey:kRegionKey];
     [sud synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:LocationManagerDidLeaveRegionNotification
+                                                        object:nil];
 }
 @end
 

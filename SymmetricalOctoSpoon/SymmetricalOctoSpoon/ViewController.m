@@ -22,7 +22,7 @@
 
 - (void)loadRegionIfAvailable {
     NSUserDefaults *sud = [NSUserDefaults standardUserDefaults];
-    NSData *data = [sud objectForKey:@"region"];
+    NSData *data = [sud objectForKey:kRegionKey];
     if (data == nil) {
         [[self regionLabel] setText:nil];
         return;
@@ -31,7 +31,7 @@
                                                        fromData:data
                                                           error:nil];
     [[self regionLabel] setText:[region asString]];
-    [sud removeObjectForKey:@"region"];
+    [sud removeObjectForKey:kRegionKey];
     [sud synchronize];
 }
 
@@ -39,11 +39,20 @@
     [self loadRegionIfAvailable];
 }
 
+- (void)handleLeavesRegionNotification {
+    [self loadRegionIfAvailable];
+}
+
 - (void)setupNotifications {
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handleEnterForegroundNotification)
-                                                 name:UIApplicationWillEnterForegroundNotification
-                                               object:nil];
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    [notificationCenter addObserver:self
+                           selector:@selector(handleEnterForegroundNotification)
+                               name:UIApplicationWillEnterForegroundNotification
+                             object:nil];
+    [notificationCenter addObserver:self
+                           selector:@selector(handleLeavesRegionNotification)
+                               name:LocationManagerDidLeaveRegionNotification
+                             object:nil];
 }
 
 - (void)awakeFromNib {
