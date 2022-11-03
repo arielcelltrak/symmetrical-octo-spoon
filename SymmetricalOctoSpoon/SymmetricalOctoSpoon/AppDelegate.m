@@ -6,16 +6,21 @@
 //
 
 #import "AppDelegate.h"
+#import "LocationManager.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, nonnull, strong) LocationManager *locationManager;
 @end
 
 @implementation AppDelegate
+- (void)setupLocationManager {
+    LocationManager *locationManager = [LocationManager sharedManager];
+    [locationManager start];
+}
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setupLocationManager];
     return YES;
 }
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		796FD0B72912C924004539EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0B62912C924004539EF /* AppDelegate.m */; };
 		796FD0BA2912C924004539EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0B92912C924004539EF /* SceneDelegate.m */; };
-		796FD0BD2912C924004539EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0BC2912C924004539EF /* ViewController.m */; };
 		796FD0C02912C924004539EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796FD0BE2912C924004539EF /* Main.storyboard */; };
 		796FD0C22912C926004539EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796FD0C12912C926004539EF /* Assets.xcassets */; };
 		796FD0C52912C926004539EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796FD0C32912C926004539EF /* LaunchScreen.storyboard */; };
@@ -17,6 +16,9 @@
 		796FD0D22912C926004539EF /* SymmetricalOctoSpoonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0D12912C926004539EF /* SymmetricalOctoSpoonTests.m */; };
 		796FD0DC2912C926004539EF /* SymmetricalOctoSpoonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0DB2912C926004539EF /* SymmetricalOctoSpoonUITests.m */; };
 		796FD0DE2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0DD2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m */; };
+		796FD0FA2912E311004539EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0F92912E311004539EF /* ViewController.m */; };
+		796FD0FD2912E3CD004539EF /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0FC2912E3CD004539EF /* LocationManager.m */; };
+		796FD1002913296F004539EF /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0FF2913296F004539EF /* Region.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +44,6 @@
 		796FD0B62912C924004539EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		796FD0B82912C924004539EF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		796FD0B92912C924004539EF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		796FD0BB2912C924004539EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		796FD0BC2912C924004539EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		796FD0BF2912C924004539EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		796FD0C12912C926004539EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796FD0C42912C926004539EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +54,12 @@
 		796FD0D72912C926004539EF /* SymmetricalOctoSpoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SymmetricalOctoSpoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		796FD0DB2912C926004539EF /* SymmetricalOctoSpoonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymmetricalOctoSpoonUITests.m; sourceTree = "<group>"; };
 		796FD0DD2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SymmetricalOctoSpoonUITestsLaunchTests.m; sourceTree = "<group>"; };
+		796FD0F82912E311004539EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		796FD0F92912E311004539EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		796FD0FB2912E3CD004539EF /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		796FD0FC2912E3CD004539EF /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		796FD0FE2913296F004539EF /* Region.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
+		796FD0FF2913296F004539EF /* Region.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Region.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +114,17 @@
 				796FD0B62912C924004539EF /* AppDelegate.m */,
 				796FD0B82912C924004539EF /* SceneDelegate.h */,
 				796FD0B92912C924004539EF /* SceneDelegate.m */,
-				796FD0BB2912C924004539EF /* ViewController.h */,
-				796FD0BC2912C924004539EF /* ViewController.m */,
 				796FD0BE2912C924004539EF /* Main.storyboard */,
 				796FD0C12912C926004539EF /* Assets.xcassets */,
 				796FD0C32912C926004539EF /* LaunchScreen.storyboard */,
 				796FD0C62912C926004539EF /* Info.plist */,
 				796FD0C72912C926004539EF /* main.m */,
+				796FD0F82912E311004539EF /* ViewController.h */,
+				796FD0F92912E311004539EF /* ViewController.m */,
+				796FD0FB2912E3CD004539EF /* LocationManager.h */,
+				796FD0FC2912E3CD004539EF /* LocationManager.m */,
+				796FD0FE2913296F004539EF /* Region.h */,
+				796FD0FF2913296F004539EF /* Region.m */,
 			);
 			path = SymmetricalOctoSpoon;
 			sourceTree = "<group>";
@@ -266,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796FD0BD2912C924004539EF /* ViewController.m in Sources */,
 				796FD0B72912C924004539EF /* AppDelegate.m in Sources */,
+				796FD0FD2912E3CD004539EF /* LocationManager.m in Sources */,
 				796FD0C82912C926004539EF /* main.m in Sources */,
+				796FD1002913296F004539EF /* Region.m in Sources */,
+				796FD0FA2912E311004539EF /* ViewController.m in Sources */,
 				796FD0BA2912C924004539EF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

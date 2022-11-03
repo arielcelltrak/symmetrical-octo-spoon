@@ -21,5 +21,18 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allow location access for geofencing</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow location access for geofencing</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow location access for geofencing</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+		<string>processing</string>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>
