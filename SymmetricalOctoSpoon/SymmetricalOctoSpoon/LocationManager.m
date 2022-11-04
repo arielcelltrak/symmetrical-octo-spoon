@@ -130,6 +130,7 @@ monitoringDidFailForRegion:(CLRegion *)region
         [lm requestAlwaysAuthorization];
         return;
     }
+    [lm stopUpdatingLocation];
     [lm startUpdatingLocation];
 }
 @end
