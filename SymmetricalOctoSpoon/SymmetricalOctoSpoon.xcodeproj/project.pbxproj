@@ -19,6 +19,7 @@
 		796FD0FA2912E311004539EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0F92912E311004539EF /* ViewController.m */; };
 		796FD0FD2912E3CD004539EF /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0FC2912E3CD004539EF /* LocationManager.m */; };
 		796FD1002913296F004539EF /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 796FD0FF2913296F004539EF /* Region.m */; };
+		79E60EDD2915AA3B00A99B77 /* AppDelegate+UNUserNotificationCenterDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E60EDC2915AA3B00A99B77 /* AppDelegate+UNUserNotificationCenterDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		796FD0FC2912E3CD004539EF /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		796FD0FE2913296F004539EF /* Region.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
 		796FD0FF2913296F004539EF /* Region.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Region.m; sourceTree = "<group>"; };
+		79E60EDB2915AA3B00A99B77 /* AppDelegate+UNUserNotificationCenterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UNUserNotificationCenterDelegate.h"; sourceTree = "<group>"; };
+		79E60EDC2915AA3B00A99B77 /* AppDelegate+UNUserNotificationCenterDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UNUserNotificationCenterDelegate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +113,7 @@
 		796FD0B42912C924004539EF /* SymmetricalOctoSpoon */ = {
 			isa = PBXGroup;
 			children = (
-				796FD0B52912C924004539EF /* AppDelegate.h */,
-				796FD0B62912C924004539EF /* AppDelegate.m */,
+				79E60EDE2915AA4800A99B77 /* AppDelegate */,
 				796FD0B82912C924004539EF /* SceneDelegate.h */,
 				796FD0B92912C924004539EF /* SceneDelegate.m */,
 				796FD0BE2912C924004539EF /* Main.storyboard */,
@@ -144,6 +146,17 @@
 				796FD0DD2912C926004539EF /* SymmetricalOctoSpoonUITestsLaunchTests.m */,
 			);
 			path = SymmetricalOctoSpoonUITests;
+			sourceTree = "<group>";
+		};
+		79E60EDE2915AA4800A99B77 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				796FD0B52912C924004539EF /* AppDelegate.h */,
+				796FD0B62912C924004539EF /* AppDelegate.m */,
+				79E60EDB2915AA3B00A99B77 /* AppDelegate+UNUserNotificationCenterDelegate.h */,
+				79E60EDC2915AA3B00A99B77 /* AppDelegate+UNUserNotificationCenterDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +295,7 @@
 				796FD1002913296F004539EF /* Region.m in Sources */,
 				796FD0FA2912E311004539EF /* ViewController.m in Sources */,
 				796FD0BA2912C924004539EF /* SceneDelegate.m in Sources */,
+				79E60EDD2915AA3B00A99B77 /* AppDelegate+UNUserNotificationCenterDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,6 +5,7 @@
 //  Created by Ariel Rodriguez on 02/11/2022.
 //
 
+#import "AppDelegate+UNUserNotificationCenterDelegate.h"
 #import "AppDelegate.h"
 #import "LocationManager.h"
 
@@ -20,6 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self registerNotifications];
     [self setupLocationManager];
     return YES;
 }

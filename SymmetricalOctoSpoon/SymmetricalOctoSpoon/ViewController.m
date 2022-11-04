@@ -43,6 +43,24 @@
     [self loadRegionIfAvailable];
 }
 
+- (void)handleIncorrectAuthorization {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Please authorize the location services"
+                                                                   message:@"We need to be notified about location changes even in the background."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction * _Nonnull action) {
+        NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        [[UIApplication sharedApplication] openURL:url
+                                           options:@{}
+                                 completionHandler:nil];
+    }];
+    [alert addAction:okAction];
+    [self presentViewController:alert
+                       animated:YES
+                     completion:nil];
+}
+
 - (void)setupNotifications {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     [notificationCenter addObserver:self
@@ -52,6 +70,10 @@
     [notificationCenter addObserver:self
                            selector:@selector(handleLeavesRegionNotification)
                                name:LocationManagerDidLeaveRegionNotification
+                             object:nil];
+    [notificationCenter addObserver:self
+                           selector:@selector(handleIncorrectAuthorization)
+                               name:LocationManagerCorrectAuthorizationNotGranted
                              object:nil];
 }
 

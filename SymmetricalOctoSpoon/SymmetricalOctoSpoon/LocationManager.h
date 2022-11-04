@@ -9,6 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 extern NSNotificationName const LocationManagerDidLeaveRegionNotification;
+extern NSNotificationName const LocationManagerCorrectAuthorizationNotGranted;
 
 @interface LocationManager : NSObject
 + (id)sharedManager;

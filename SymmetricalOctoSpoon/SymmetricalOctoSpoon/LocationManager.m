@@ -5,11 +5,13 @@
 //  Created by Ariel Rodriguez on 02/11/2022.
 //
 
+#import "AppDelegate+UNUserNotificationCenterDelegate.h"
 #import "LocationManager.h"
 #import "Region.h"
 #import <CoreLocation/CoreLocation.h>
 
 NSNotificationName const LocationManagerDidLeaveRegionNotification = @"LocationManagerDidLeaveRegionNotification";
+NSNotificationName const LocationManagerCorrectAuthorizationNotGranted = @"LocationManagerCorrectAuthorizationNotGranted";
 
 @interface LocationManager ()
 @property (nonnull, strong) CLLocationManager *locationManager;
@@ -21,9 +23,24 @@ NSNotificationName const LocationManagerDidLeaveRegionNotification = @"LocationM
 @end
 
 @implementation LocationManager (CLLocationManagerDelegate)
+- (void)propagateMessage:(NSString *)message {
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate scheduleNotification:message];
+}
+
 - (void)locationManager:(CLLocationManager *)manager
      didUpdateLocations:(NSArray<CLLocation *> *)locations {
     [self setCurrentLocation:[locations lastObject]];
+}
+
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager *)manager {
+    if ([manager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways) {
+        [manager startUpdatingLocation];
+        return;
+    }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:LocationManagerCorrectAuthorizationNotGranted
+                                                        object:nil];
 }
 
 - (void)locationManager:(CLLocationManager *)manager
@@ -51,6 +68,18 @@ NSNotificationName const LocationManagerDidLeaveRegionNotification = @"LocationM
     
     [[NSNotificationCenter defaultCenter] postNotificationName:LocationManagerDidLeaveRegionNotification
                                                         object:nil];
+    [self propagateMessage:@"Leaving never easy"];
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+monitoringDidFailForRegion:(CLRegion *)region
+              withError:(NSError *)error {
+    [self propagateMessage:[error localizedDescription]];
+}
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error {
+    [self propagateMessage:[error localizedDescription]];
 }
 @end
 
@@ -85,13 +114,22 @@ NSNotificationName const LocationManagerDidLeaveRegionNotification = @"LocationM
         [lm setDistanceFilter:kCLDistanceFilterNone];
         [lm requestAlwaysAuthorization];
         [lm requestWhenInUseAuthorization];
+        [lm setAllowsBackgroundLocationUpdates:YES];
         [lm setDelegate:self];
+        if ([lm authorizationStatus] != kCLAuthorizationStatusAuthorizedAlways) {
+            [lm requestAlwaysAuthorization];
+        }
         [self setLocationManager:lm];
     }
     return self;
 }
 
 - (void)start {
-    [[self locationManager] startUpdatingLocation];
+    CLLocationManager *lm = [self locationManager];
+    if ([lm authorizationStatus] != kCLAuthorizationStatusAuthorizedAlways) {
+        [lm requestAlwaysAuthorization];
+        return;
+    }
+    [lm startUpdatingLocation];
 }
 @end
